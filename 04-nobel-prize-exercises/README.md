@@ -1,4 +1,4 @@
-# 🏆 Module 02: Nobel Prize Practice Exercises
+# 🏆 Module 04: Nobel Prize Practice Exercises
 
 ### 🎯 Overview & Learning Objectives
 This module focuses on practicing intermediate SQL queries using the **Nobel Prize Dataset**. The exercises are designed to master data filtering techniques, relational operators, and conditional logic to extract specific insights from historical laureate data.
