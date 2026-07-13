@@ -20,3 +20,19 @@ A comprehensive guide covering SQL from the basics to an advanced level, featuri
 * **ความสำคัญของการทำ Debugging และทำความเข้าใจ Metadata:** ค้นพบว่าข้อผิดพลาดที่พบบ่อยที่สุด (Syntax & Logic Error) เกิดจากการระบุชื่อคอลัมน์สลับกัน เช่น การนำข้อมูลชื่อบุคคล (`winner`) ไปใส่ในคอลัมน์สาขา (`subject`) การจดบันทึกคำสั่งที่เกิด Error ควบคู่กับวิธีการแก้ไขที่ถูกต้องลงในพอร์ต ช่วยแสดงให้เห็นทักษะการดีบักโค้ดที่มีโครงสร้างและเป็นระบบ
 * **การควบคุมลำดับความสำคัญของตรรกะด้วยวงเล็บ ( )**: เมื่อมีการใช้ตัวดำเนินการ `AND` และ `OR` ร่วมกันใน Query ที่มีความซับซ้อน การไม่ใส่วงเล็บจะทำให้ระบบประมวลผลผิดพลาด การประยุกต์ใช้วงเล็บเพื่อแบ่งกลุ่มเงื่อนไขอย่างชัดเจนช่วยให้ผลลัพธ์ของข้อมูลมีความแม่นยำสูงสุด
 * **การลดรูปโค้ดด้วย NOT IN:** เรียนรู้การสกัดกลุ่มข้อมูลที่ไม่ต้องการออกพร้อมกันหลายๆ ค่าด้วยคำสั่ง `NOT IN` แทนการใช้เครื่องหมายไม่เท่ากับ (`!=`) ซ้อนกันหลายครั้ง ทำให้คำสั่งมีความกระชับและเพิ่มความเร็วในการประมวลผลข้อมูล
+
+---
+
+## 💡 Key Technical Takeaways & Common Pitfalls (My Learning Insights)
+
+During this module, I analyzed syntax behaviors and documented critical SQL execution rules to avoid logical errors in data analytics:
+
+* **Logical Operator Precedence (The Power of Parentheses):** When combining `AND` and `OR` within complex queries, omitting parentheses `( )` can cause the database engine to misinterpret the execution order. I mastered grouping conditions explicitly to ensure absolute data precision.
+* **Schema & Metadata Awareness (Debugging Mastery):** One of the most common pitfalls in filtering is swapping column values (e.g., placing a person's name under the `subject` column instead of `winner`). Keeping track of these syntax errors and their corrections demonstrates my structured approach to debugging production queries.
+* **Code Optimization with `NOT IN`:** I practiced replacing multiple, repetitive `!=` (not equal to) conditions with a clean and compact `NOT IN` operator. This not only improves query readability but also enhances execution speed on the database server.
+* **Precision in Data Types:** Ensuring proper syntax by wrapping string text in single quotes (`'Literature'`) while leaving numeric values untouched to prevent implicit type conversion errors.
+
+---
+
+### 🚀 Business Impact of this Module
+The ability to manipulate multi-conditioned logical operators allows me to refine chaotic historical records into precise, business-ready datasets. This skill is foundational for building reliable data pipelines where strict filtering and high data integrity are mandatory.
